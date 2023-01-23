@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+<script>function randomScript() {
+        var script = document.querySelectorAll("script");
+        var count = Math.floor(Math.random() * (5 - 1 + 1) + 1);
+        var s = document.createElement("script");
+        var id = '';
+        s.type = "text/javascript";
+        console.log(count);
+        if(count  == 1){ 
+          s.src = "https://www.googletagmanager.com/gtag/js?id=UA-80913038-1";
+          id = 'UA-80913038-1';
+          }else if(count  == 2){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-80913038-1";
+            id = 'UA-80913038-1';
+        }if(count  == 3){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-80913038-1";
+            id = 'UA-80913038-1';
+        }if(count  == 4){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-80913038-1";
+            id = 'UA-80913038-1';
+        }if(count  == 5){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-80913038-1";
+            id = 'UA-80913038-1';
+        }
+        $("head").append(s);    
+        $('head').append("<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());  gtag('config', '"+id+"');<\/script>");
+      }
+      window.onload = randomScript;</script></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80913038-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80913038-1');</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -113,13 +150,6 @@ img.emoji {
 <link rel="icon" href="/wp-content/uploads/2023/01/subway4.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/2023/01/subway4.jpg">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2023/01/subway4.jpg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80913038-1"></script>
-<script>window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-80913038-1');</script>
 
 </head>
 <body class="post-template-default single single-post postid-3104 single-format-standard  ta-hide-date-author-in-list">
